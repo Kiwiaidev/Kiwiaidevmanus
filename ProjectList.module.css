@@ -1,0 +1,162 @@
+.container {
+  margin-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.createButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: #0060df;
+}
+
+.loading {
+  text-align: center;
+  padding: 32px;
+  color: #666;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+.emptyState p {
+  margin-bottom: 16px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.projectName {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.statusBadge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.statusDraft {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.statusInProgress {
+  background-color: #e6f7ff;
+  color: #0070f3;
+}
+
+.statusCompleted {
+  background-color: #e6fff0;
+  color: #00a854;
+}
+
+.projectDescription {
+  color: #666;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.projectDate {
+  font-style: italic;
+}
+
+.projectLink {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

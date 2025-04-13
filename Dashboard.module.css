@@ -1,0 +1,259 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.newButton {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.newButton:hover {
+  background-color: #0060df;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.statusCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #ccc;
+}
+
+.statusCard.operational {
+  border-top-color: #52c41a;
+}
+
+.statusCard.degraded {
+  border-top-color: #faad14;
+}
+
+.statusCard.outage {
+  border-top-color: #f5222d;
+}
+
+.statusTitle {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.statusIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.statusDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.operational .statusDot {
+  background-color: #52c41a;
+}
+
+.degraded .statusDot {
+  background-color: #faad14;
+}
+
+.outage .statusDot {
+  background-color: #f5222d;
+}
+
+.statusText {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.operational .statusText {
+  color: #52c41a;
+}
+
+.degraded .statusText {
+  color: #faad14;
+}
+
+.outage .statusText {
+  color: #f5222d;
+}
+
+.statusMessage {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.projectName {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.projectStatus {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.draft {
+  background-color: #f5f5f5;
+  color: #595959;
+}
+
+.inProgress {
+  background-color: #e6f7ff;
+  color: #0070f3;
+}
+
+.deployed {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.projectDescription {
+  color: #666;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.projectDate {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metaLabel {
+  color: #888;
+  font-weight: 500;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.projectLink {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.projectLink:hover {
+  background-color: #e5e5e5;
+}
+
+.emptyState {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+@media (max-width: 768px) {
+  .statusGrid, .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectMeta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

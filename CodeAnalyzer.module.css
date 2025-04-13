@@ -1,0 +1,340 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.inputSection {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.codeInput, .contextInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.analyzeButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.analyzeButton:hover {
+  background-color: #0060df;
+}
+
+.analyzeButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.summaryCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.summary {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.complexityMetrics {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.metricsTitle {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.metricCard {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metricName {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.metricValue {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.issuesSection, .suggestionsSection {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.issuesList, .suggestionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.issueCard {
+  border-radius: 6px;
+  padding: 16px;
+  border-left: 4px solid #ccc;
+}
+
+.issueCard.critical {
+  border-left-color: #f5222d;
+  background-color: #fff1f0;
+}
+
+.issueCard.high {
+  border-left-color: #fa8c16;
+  background-color: #fff7e6;
+}
+
+.issueCard.medium {
+  border-left-color: #faad14;
+  background-color: #fffbe6;
+}
+
+.issueCard.low {
+  border-left-color: #52c41a;
+  background-color: #f6ffed;
+}
+
+.issueHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.issueType, .issueSeverity {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.issueType.error {
+  background-color: #fff1f0;
+  color: #f5222d;
+}
+
+.issueType.warning {
+  background-color: #fffbe6;
+  color: #faad14;
+}
+
+.issueType.info {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.issueMessage {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.issueLocation, .issueRule {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.issueCode {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+
+.suggestionCard {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.suggestionHeader {
+  margin-bottom: 12px;
+}
+
+.suggestionType {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.suggestionType.refactor {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.suggestionType.optimization {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.suggestionType.security {
+  background-color: #fff1f0;
+  color: #f5222d;
+}
+
+.suggestionType.accessibility {
+  background-color: #f9f0ff;
+  color: #722ed1;
+}
+
+.suggestionType.bestPractice {
+  background-color: #fffbe6;
+  color: #faad14;
+}
+
+.suggestionMessage {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.suggestionLocation {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.codeComparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.originalCode, .suggestedCode {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.codeLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.codeBlock {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.suggestionExplanation {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .codeComparison {
+    grid-template-columns: 1fr;
+  }
+  
+  .metricsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,319 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #0070f3;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.editButton, .saveButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editButton:hover, .saveButton:hover {
+  background-color: #0060df;
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancelButton:hover {
+  background-color: #f5f5f5;
+}
+
+.editActions {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+.projectInfo {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+}
+
+.projectName {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.projectMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+.projectStatus {
+  font-weight: 500;
+}
+
+.statusDraft, .statusInProgress, .statusCompleted {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.statusDraft {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.statusInProgress {
+  background-color: #e6f7ff;
+  color: #0070f3;
+}
+
+.statusCompleted {
+  background-color: #e6fff0;
+  color: #00a854;
+}
+
+.projectDate {
+  color: #666;
+}
+
+.projectDescription h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.projectDescription p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.projectLink {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.projectLink:hover {
+  background-color: #e5e5e5;
+}
+
+.componentsSection {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  padding: 32px;
+  color: #666;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+.emptyState p {
+  margin-bottom: 16px;
+}
+
+.createButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: #0060df;
+}
+
+.componentsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.componentCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.componentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.componentName {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.componentType {
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.componentPath {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.componentActions {
+  display: flex;
+  gap: 8px;
+}
+
+.viewButton, .editButton {
+  flex: 1;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewButton:hover, .editButton:hover {
+  background-color: #e5e5e5;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.input, .textarea, .select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .projectMeta {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .componentsList {
+    grid-template-columns: 1fr;
+  }
+}

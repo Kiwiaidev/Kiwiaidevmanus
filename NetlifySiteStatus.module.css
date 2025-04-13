@@ -1,0 +1,238 @@
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.siteInfo {
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.siteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.siteName {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.siteLink {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.siteLink:hover {
+  background-color: #e5e5e5;
+}
+
+.siteDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.detailLabel {
+  font-weight: 500;
+  color: #666;
+  min-width: 100px;
+}
+
+.adminLink {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.adminLink:hover {
+  text-decoration: underline;
+}
+
+.deployInfo {
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.deployInfo.building {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+.deployInfo.ready {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.deployInfo.error {
+  background-color: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.deployInfo.canceled {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+}
+
+.deployHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.deployTitle {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.deployStatus {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.building .deployStatus {
+  background-color: #91d5ff;
+  color: #003a8c;
+}
+
+.ready .deployStatus {
+  background-color: #b7eb8f;
+  color: #135200;
+}
+
+.error .deployStatus {
+  background-color: #ffccc7;
+  color: #a8071a;
+}
+
+.canceled .deployStatus {
+  background-color: #d9d9d9;
+  color: #595959;
+}
+
+.deployDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.errorMessage {
+  background-color: #fff2f0;
+  color: #a8071a;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.deployLinks {
+  margin-top: 12px;
+}
+
+.viewDeployButton {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.viewDeployButton:hover {
+  background-color: #0060df;
+}
+
+.commitLink {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.commitLink:hover {
+  text-decoration: underline;
+}
+
+.refreshButton {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.refreshButton:hover {
+  background-color: #e5e5e5;
+}
+
+.refreshButton:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+  padding: 16px 0;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .siteHeader, .deployHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

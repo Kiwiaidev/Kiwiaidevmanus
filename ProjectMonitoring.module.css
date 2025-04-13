@@ -1,0 +1,242 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #e00;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.projectName {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.projectStatus {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.monitoringGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.monitoringCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.emptyState {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  color: #666;
+}
+
+.setupButton {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 16px;
+  transition: background-color 0.2s;
+}
+
+.setupButton:hover {
+  background-color: #0060df;
+}
+
+.deploymentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.deploymentItem {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.deploymentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.deploymentStatus, .statusBadge, .deployStatus {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.deploymentEnvironment {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.deploymentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.deploymentMeta, .githubRepo, .commitMeta, .siteUrls, .deployMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.metaLabel {
+  font-weight: 500;
+  color: #666;
+}
+
+.deploymentLink, .repoLink, .commitLink, .workflowLink, .siteLink, .adminLink, .deployLink {
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.deploymentLink:hover, .repoLink:hover, .commitLink:hover, .workflowLink:hover, .siteLink:hover, .adminLink:hover, .deployLink:hover {
+  text-decoration: underline;
+}
+
+.githubDetails, .netlifyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commitDetails, .workflowStatus, .netlifyDeploy {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.detailsTitle {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.commitMessage {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.deployActions {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.deployButton {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.deployButton:hover {
+  background-color: #0060df;
+}
+
+/* Status colors */
+.success {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.inProgress {
+  background-color: #e6f7ff;
+  color: #0070f3;
+}
+
+.error {
+  background-color: #fff2f0;
+  color: #f5222d;
+}
+
+.neutral {
+  background-color: #f5f5f5;
+  color: #595959;
+}
+
+@media (max-width: 768px) {
+  .monitoringGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .deploymentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

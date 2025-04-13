@@ -1,0 +1,84 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #333;
+  text-align: center;
+}
+
+.toolsNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.toolButton {
+  padding: 10px 16px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.toolButton:hover {
+  background-color: #e5e5e5;
+}
+
+.toolButton.active {
+  background-color: #0070f3;
+  color: white;
+}
+
+.toolContent {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 500px;
+}
+
+.comingSoon {
+  text-align: center;
+  padding: 64px 0;
+  color: #666;
+}
+
+.comingSoon h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.comingSoon p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .toolsNav {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .toolButton {
+    width: 100%;
+    text-align: left;
+  }
+}
